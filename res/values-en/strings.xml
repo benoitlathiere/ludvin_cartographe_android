@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Cartographe</string>
+	<string name="menu_settings">Settings</string>
+	<string name="title_activity_start">Start</string>
+	<string name="title_activity_home">Home</string>
+	<string name="action_settings">Settings</string>
+	<string name="title_activity_uibatiment">building</string>
+	<string name="title_section1">Section 1</string>
+	<string name="title_section2">Section 2</string>
+	<string name="title_section3">Section 3</string>
+	<string name="title_activity_uiniveau">Level</string>
+	<string name="title_activity_uirepere">Spot</string>
+	<string name="label_delete">Delete</string>
+	<string name="label_see_details">See details</string>
+	<string name="label_measures">Measures</string>
+	<string name="label_level">Level</string>
+	<string name="label_new_level">New level</string>
+	<string name="label_building">Building</string>
+	<string name="label_spot">Spot</string>
+	<string name="label_POI">POI</string>
+	<string name="label_zone">Zone</string>
+	<string name="label_levels">Levels</string>
+	<string name="label_name_of_level">Level name</string>
+	<string name="label_spots">Spots</string>
+	<string name="msg_enabling_wifi">WiFi enabling</string>
+	<string name="msg_please_activate_wifi">Please activate WiFi</string>
+	<string name="msg_internet_unreachable_check_connection">Internet network is unrecheable. Check your connection.</string>
+	<string name="label_delete_measures">Delete measures</string>
+	<string name="msg_no_internet_connection">No Internet connection.</string>
+	<string name="btn_Yes">Yes</string>
+	<string name="btn_No">No</string>
+	<string name="msg_disabling_wifi">WiFi disabling</string>
+	<string name="msg_wifi_required">WiFi required</string>
+	<string name="label_location">Location</string>
+	<string name="label_locations">Locations</string>
+	<string name="label_locations_management">Locations management</string>
+	<string name="label_measures_management">Measures management</string>
+	<string name="label_buildings_management">Building management</string>
+	<string name="btn_OK">OK</string>
+	<string name="btn_Cancel">Cancel</string>
+	<string name="label_level_name">Level name</string>
+	<string name="btn_Create">Create</string>
+	<string name="btn_Connection">Connection</string>
+	<string name="label_levels_management">Levels management</string>
+	<string name="label_buildings">Buildings</string>
+	<string name="label_new_building">New building</string>
+	<string name="label_new_spot">New spot</string>
+	<string name="label_emergency">Emergency</string>
+	<string name="label_name_of_spot">Spot name</string>
+	<string name="label_name_of_building">Building name</string>
+	<string name="msg_new_name_must_be_different">The new name must be different.</string>
+	<string name="msg_please_give_a_name">Please give a name</string>
+	<string name="label_rename">Rename</string>
+	<string name="label_new_name">New name</string>
+	<string name="msg_problem_list_buildings">Problem. Impossible to list buildings.</string>
+	<string name="label_comment">Comment</string>
+	<string name="label_quit">Quit</string>
+	
+</resources>

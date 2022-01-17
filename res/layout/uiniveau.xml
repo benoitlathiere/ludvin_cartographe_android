@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/containeruiniveau"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	tools:context=".UINiveau" >
+
+	<LinearLayout
+		android:id="@+id/linearLayout1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:orientation="vertical" >
+
+		<TextView
+			android:id="@+id/TVDemo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:text="@string/label_new_spot"
+			android:textAppearance="?android:attr/textAppearanceLarge" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp" >
+
+			<EditText
+				android:id="@+id/ETRepere"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:hint="@string/label_name_of_spot" />
+
+			<Button
+				android:id="@+id/btnCreerRepere"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/btn_Create" />
+		</LinearLayout>
+
+		<EditText
+			android:id="@+id/ETCommentaire"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:hint="@string/label_comment"
+			android:maxLength="255" >
+
+			<requestFocus />
+		</EditText>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" >
+
+			<RadioGroup
+				android:id="@+id/RGRepere"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:background="@drawable/back"
+				android:padding="5dp" >
+
+				<RadioButton
+					android:id="@+id/RBZone"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_margin="1dp"
+					android:text="@string/label_zone" />
+
+				<RadioButton
+					android:id="@+id/RBPoi"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_margin="1dp"
+					android:layout_weight="0.47"
+					android:text="@string/label_POI" />
+			</RadioGroup>
+
+			<CheckBox
+				android:id="@+id/CBUrgence"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:layout_weight="0.28"
+				android:background="@drawable/back"
+				android:gravity="center_vertical|center_horizontal"
+				android:padding="5dp"
+				android:text="@string/label_emergency" />
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/textView3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:text="@string/label_spots"
+			android:textAppearance="?android:attr/textAppearanceLarge" />
+
+		<TextView
+			android:id="@+id/textView1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="28dp"
+			android:text="*Point d&apos;intérêt" />
+
+		<ListView
+			android:id="@+id/LVReperes"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="5dp" >
+		</ListView>
+
+		<ExpandableListView
+			android:id="@+id/ELVzones"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:visibility="gone" >
+		</ExpandableListView>
+	</LinearLayout>
+
+</RelativeLayout>

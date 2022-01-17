@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/LinearLayout1"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_margin="5dp"
+	android:orientation="vertical"
+	tools:context=".UIAccueil" >
+
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" >
+
+        <TextView
+        	android:id="@+id/TextView01"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/label_buildings"
+        	android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageView
+        	android:id="@+id/IVBuildPlus"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="right"
+        	android:layout_marginLeft="20dp"
+        	android:layout_marginRight="0dp"
+        	android:contentDescription="@string/label_new_building"
+        	android:src="@drawable/btn_plus" />
+
+    </LinearLayout>
+
+    <TextView
+    	android:id="@+id/TVPlan"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="5dp"
+    	android:text="@string/label_new_building"
+    	android:textAppearance="?android:attr/textAppearanceLarge"
+    	android:visibility="gone" />
+
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="5dp"
+    	android:visibility="gone" >
+
+        <EditText
+        	android:id="@+id/ETNouvBat"
+        	android:layout_width="161dp"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:ems="10"
+        	android:hint="@string/label_name_of_building"
+        	android:imeOptions="actionGo"
+        	android:maxLength="45"
+        	android:scrollbars="none"
+        	android:textAppearance="?android:attr/textAppearance" />
+
+        <Button
+        	android:id="@+id/btnCreerNouvBat"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:text="@string/btn_Create" />
+
+    </LinearLayout>
+
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginBottom="5dp"
+    	android:layout_marginTop="5dp"
+    	android:orientation="vertical" >
+
+        <ListView
+        	android:id="@+id/LVBatiments"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="5dp"
+
+        	android:footerDividersEnabled="true"
+        	android:headerDividersEnabled="true"
+        	android:scrollbarAlwaysDrawVerticalTrack="true"
+        	android:scrollbars="vertical|horizontal" >
+
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

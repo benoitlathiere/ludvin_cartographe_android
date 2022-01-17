@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".UIDemarrage" >
+
+    <LinearLayout
+    	android:id="@+id/LL_identification"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical" >
+
+    	<TextView
+    	    android:id="@+id/textView1"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginBottom="10dp"
+    	    android:layout_marginTop="10dp"
+    	    android:text="@string/msg_please_log_in"
+    	    android:textAppearance="?android:attr/textAppearanceMedium"
+    	    android:textColor="?android:attr/textColorPrimary" />
+
+    	<TextView
+    		android:id="@+id/TVDemo"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_gravity="center_horizontal|center_vertical"
+    		android:text="LUD&apos;VIN - DEMONSTRATION\n"
+    		android:textAppearance="?android:attr/textAppearanceLarge"
+    		android:visibility="gone" />
+
+    	<LinearLayout
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content" >
+
+    		<TextView
+    		    android:id="@+id/TVPlan"
+    		    android:layout_width="100dp"
+    		    android:layout_height="wrap_content"
+    		    android:text="@string/label_login"
+    		    android:textColor="?android:attr/textColorPrimary"
+    		    android:textSize="16sp" />
+
+    		<EditText
+    		    android:id="@+id/ET_login"
+    		    android:layout_width="0dp"
+    		    android:layout_height="wrap_content"
+    		    android:layout_weight="1"
+    		    android:ems="10"
+    		    android:hint="@string/label_login"
+    		    android:inputType="textEmailAddress" />
+
+    	</LinearLayout>
+
+    	<LinearLayout
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content" >
+
+    		<TextView
+    		    android:id="@+id/TVRowBatiment"
+    		    android:layout_width="100dp"
+    		    android:layout_height="wrap_content"
+    		    android:text="@string/label_password"
+    		    android:textColor="?android:attr/textColorPrimary"
+    		    android:textSize="16sp" />
+
+    		<EditText
+    		    android:id="@+id/ET_pass"
+    		    android:layout_width="0dp"
+    		    android:layout_height="wrap_content"
+    		    android:layout_weight="1"
+    		    android:ems="10"
+    		    android:hint="@string/label_password"
+    		    android:inputType="textPassword" />
+
+    	</LinearLayout>
+
+    	<CheckBox
+    	    android:id="@+id/CBKeepCnx"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/label_save_informations"
+    	    android:textColor="?android:attr/textColorPrimaryNoDisable" />
+
+    	<Button
+    		android:id="@+id/btnIdentification"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_gravity="right"
+    		android:text="@string/btn_Connection" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_attente"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+        	android:id="@+id/textView4"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center_horizontal"
+        	android:layout_margin="10dp"
+        	android:text="@string/msg_please_wait"
+        	android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/IVBuildPlus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="Logo"
+            android:src="@drawable/logo_carto" />
+
+    </RelativeLayout>
+
+    <TextView
+    	android:id="@+id/TVVersion"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="10dp"
+    	android:text=" "
+    	android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</LinearLayout>

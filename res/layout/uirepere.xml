@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/containeruirepere"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	tools:context=".UIRepere" >
+
+	<LinearLayout
+		android:id="@+id/LLReperesGlobal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" >
+
+			<Button
+				android:id="@+id/BtnEnrPosition"
+				android:layout_width="wrap_content"
+				android:layout_height="40dp"
+				android:layout_gravity="center_vertical|center_horizontal"
+				android:text="Enregistrer mesures" />
+
+			<ToggleButton
+				android:id="@+id/TogWifi"
+				android:layout_width="wrap_content"
+				android:layout_height="40dp"
+				android:layout_gravity="center_vertical|center_horizontal"
+				android:text="WiFi"
+				android:textOff="WiFi off"
+				android:textOn="WiFi on" />
+
+		</LinearLayout>
+
+		<RelativeLayout
+			android:id="@+id/RLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" >
+
+			<LinearLayout
+				android:id="@+id/LLMesures"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical" >
+
+				<TextView
+					android:id="@+id/textView4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/label_measures"
+					android:textAppearance="?android:attr/textAppearanceMedium" />
+
+				<ListView
+					android:id="@+id/LVMesures"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" >
+				</ListView>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/LLPositions"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:visibility="gone" >
+
+				<TextView
+					android:id="@+id/TVDemo"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="20dp"
+					android:text="Positions enregistrées :"
+					android:textAppearance="?android:attr/textAppearanceLarge" />
+
+				<ListView
+					android:id="@+id/LVPositions"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent" >
+				</ListView>
+			</LinearLayout>
+		</RelativeLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/LLAttente"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical"
+		android:visibility="visible" >
+
+		<ProgressBar
+			android:id="@+id/progressBar1"
+			style="?android:attr/progressBarStyleLarge"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal|center_vertical" />
+
+		<TextView
+			android:id="@+id/textView3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Repérage en cours. Patientez..."
+			android:textAppearance="?android:attr/textAppearanceLarge" />
+
+		<ProgressBar
+			android:id="@+id/PBhorizontal"
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.97"
+			android:progress="0" />
+	</LinearLayout>
+
+</LinearLayout>

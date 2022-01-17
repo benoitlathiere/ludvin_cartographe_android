@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/containeruibatiment"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fadingEdge="vertical"
+	tools:context=".UIBatiment"
+	tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" >
+
+        <LinearLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:visibility="gone" >
+
+            <TextView
+            	android:id="@+id/textView1"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="@string/label_building"
+            	android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Spinner
+            	android:id="@+id/SBatiments"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:scrollbarStyle="insideInset"
+            	android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+        <TextView
+        	android:id="@+id/TVDemo"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	android:text="@string/label_new_level"
+        	android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="5dp" >
+
+            <EditText
+            	android:id="@+id/ETNiveau"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:ems="10"
+            	android:hint="@string/label_level_name" >
+
+            	<requestFocus />
+            </EditText>
+
+            <Button
+            	android:id="@+id/btnCreerNiveau"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:text="@string/btn_Create" />
+
+        </LinearLayout>
+
+        <TextView
+        	android:id="@+id/textView3"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	android:text="@string/label_levels"
+        	android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ListView
+        	android:id="@+id/LVNiveaux"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="5dp"
+        	android:scrollbarAlwaysDrawVerticalTrack="true"
+        	android:smoothScrollbar="true" >
+
+        </ListView>
+
+    </LinearLayout>
+
+</FrameLayout>

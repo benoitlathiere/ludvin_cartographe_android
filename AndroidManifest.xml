@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="org.ludvin.cartographe"
+	android:versionCode="666"
+	android:versionName="0.15.0" >
+
+	<uses-sdk
+		android:minSdkVersion="14"
+		android:targetSdkVersion="17" />
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+	<!--
+    application.androidname rajouté selon 
+	http://stackoverflow.com/questions/4572338/extending-application-to-share-variables-globally
+	-->
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+	<application
+		android:name="org.ludvin.cartographe.GlobalVars"
+		android:allowBackup="true"
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name"
+		android:theme="@style/AppTheme" android:uiOptions="splitActionBarWhenNarrow" >
+		<activity
+			android:name="org.ludvin.cartographe.UIDemarrage"
+			android:label="@string/app_name">
+			<intent-filter
+				android:icon="@drawable/logo_carto"
+				android:label="@string/app_name" >
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name="org.ludvin.cartographe.UIAccueil"
+			android:label="@string/title_activity_home"
+			android:windowSoftInputMode="stateHidden" >
+		</activity>
+		<activity android:name="org.ludvin.cartographe.UIBatiment" android:label="@string/title_activity_uibatiment" android:windowSoftInputMode="stateHidden" android:logo="@drawable/logo_building">
+		</activity>
+		
+		<activity
+			android:name="org.ludvin.cartographe.UINiveau"
+			android:label="@string/title_activity_uiniveau"
+			android:windowSoftInputMode="stateHidden" android:logo="@drawable/logo_levels2">
+		</activity>
+		<activity
+			android:name="org.ludvin.cartographe.UIRepere"
+			android:label="@string/title_activity_uirepere" android:logo="@drawable/logo_spot">
+		</activity>
+		<activity android:name="org.ludvin.cartographe.GlobalVars" >
+		</activity>
+		<activity
+			android:name="org.ludvin.cartographe.UIParametres"
+			android:label="@string/title_activity_uiparametres" >
+		</activity>
+	</application>
+
+</manifest>
